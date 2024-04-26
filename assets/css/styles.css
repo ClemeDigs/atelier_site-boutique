@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-size: 14px;
+    background-color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    background-color: rgb(255, 243, 219);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 20px 20px;
+    gap: 1rem;
+}
+
+.column {
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.titre-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.logo-nav nav {
+    display: none;
+}
+
+.logo-nav nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+header ul li:hover, header ul li:focus {
+    text-decoration: underline;
+    font-weight: 800;
+    color: rgb(255, 162, 0);
+}
+
+.icones {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem;
+}
+
+.material-symbols-outlined:hover, .material-symbols-outlined:focus {
+    color: rgb(255, 162, 0);
+}
+
+.modale {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-modale {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 60vw;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.nav-modale nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.btn-close {
+    background-color: rgba(245, 245, 220, 0);
+    color:  rgb(255, 162, 0);
+    border: 2px solid rgb(255, 162, 0);
+    border-radius: 10px;
+    padding: 6px 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-close:hover, .btn-close:focus {
+    font-weight: 700;
+    border: 3px solid rgb(255, 162, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+        
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-nav nav {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
