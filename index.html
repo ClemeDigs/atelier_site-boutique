@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./assets/img/Logo-Clementine.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./assets/css/styles.css"/>
-    <script src="app.js" defer></script>
+    <script src="./assets/js/dialog.js" defer></script>
+    <script src="./assets/js/products.js" defer></script>
     <title>Un Zeste de Clémentine</title>
 </head>
 <body>
@@ -36,12 +38,17 @@
                 <span class="material-symbols-outlined">
                     search
                 </span>
-                <span class="material-symbols-outlined menu">
+                <button class="btn__menu" data-dialog="#menu-mobile">
+                    <span class="material-symbols-outlined menu">
                     menu
-                </span>
+                    </span>
+                </button>
             </div>
         </div>
-        <div class="modale hidden">
+        <div id="menu-mobile" class="dialog hidden" aria-role="dialog">
+            <div class="btn__container">
+                <button data-dialog="#menu-mobile" class="btn-close">X</button>
+            </div>
             <div class="nav-modale">
                 <nav >
                     <ul>
@@ -52,9 +59,32 @@
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <button class="btn-close">X</button>
             </div>
         </div>
     </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner__left">
+                <div class="banner__content">
+                    <h2>Découvrez nos nouveaux produits</h2>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ab, alias voluptatem voluptas rerum iusto molestiae dolor temporibus explicabo consequatur atque aspernatur. Aut, velit perspiciatis?</span>
+                    <button class="btn__discover">Découvrir</button>
+                </div>
+            </div>
+            <div class="banner__right">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./assets/img/vecteezy_sandwich-biscuits-ai-genrative_27292691.png">
+                    <img class="img__banner" src="./assets/img/img-banner-mobile.png" alt="Photo des nouveaux biscuits">
+                </picture>
+            </div>
+        </div>
+
+        <section class="products">
+            
+        </section>
+
+        
+    </main>
 </body>
 </html>

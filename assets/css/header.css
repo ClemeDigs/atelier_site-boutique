@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.bar {
+    height: 50px;
+    width: 100%;
+    background-color:  #ffd895;
+    display: flex;
+    justify-content: center;
+}
+
+.header-sans-bar {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.titre-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-nav nav {
+    display: none;
+}
+
+.logo-nav nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+header ul li:hover, header ul li:focus {
+    text-decoration: underline;
+    font-weight: 800;
+    color: rgb(255, 162, 0);
+}
+
+.icones {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5rem;
+}
+
+.material-symbols-outlined:hover, .material-symbols-outlined:focus {
+    color: rgb(255, 162, 0);
+}
+
+.nav-modale {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: min(400px, 70%);
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.nav-modale nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.btn__container {
+    width: min(400px, 70%);
+    padding: 1rem;
+    background-color: #ffd895;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dialog[open] .nav-modale {
+    animation: slideInLeft 0.5s forwards;
+}
+
+.dialog[closing] .nav-modale {
+    animation: slideOutLeft 0.5s forwards;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-nav nav {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
