@@ -1,7 +1,8 @@
 .banner {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem 2rem 2rem;
+
+    padding: 2rem;
     gap: 2rem;
     background-color: white;
     border-radius: 20px;
@@ -12,6 +13,7 @@
     order: 2;
     display: flex;
     justify-content: center;
+
 }
 
 .banner__content {
@@ -28,8 +30,7 @@
 }
 
 .img__banner {
-    min-width: 200px;
-    max-width: 300px;
+    max-width: min(450px, 100%);
     width: 100%;
     height: auto;
 }
@@ -44,11 +45,14 @@
     .banner__right {
         order: 2;
         align-items: center;
+        justify-content: center;
+        width: 50%;
     }
 
     .banner__left {
         order: 1;
         align-items: center;
+        width: 50%;
     }
 
     .img__banner {

@@ -1,6 +1,7 @@
 .products {
     background-color: rgba(255, 255, 255, 0.3);
     width: 80%;
+    max-width: 1024px;
     padding: 2rem;
     border: 2px solid white;
     border-radius: 20px;
@@ -65,5 +66,9 @@
 @media screen and (min-width: 1280px){
     .products__fiches {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .products {
+        max-width: 1280px;
     }
 }
