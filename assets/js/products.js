@@ -78,27 +78,27 @@ function productToHtml(product) {
     const divHtml = document.createElement('div');
     divHtml.classList.add('product__container');
 
-    const imgDiv = document.createElement('div'); // Crée une div pour l'image
+    const imgDiv = document.createElement('div');
     imgDiv.classList.add('div__img');
     divHtml.appendChild(imgDiv);
 
     const img = document.createElement('img');
     img.src = product.img;
-    imgDiv.appendChild(img); // Ajoute l'image à la div pour l'image
+    imgDiv.appendChild(img); 
 
-    const textDiv = document.createElement('div'); // Crée une div pour le texte
-    textDiv.classList.add('div__text'); // Ajoute la classe div__text
+    const textDiv = document.createElement('div'); 
+    textDiv.classList.add('div__text'); 
     divHtml.appendChild(textDiv);
 
-    const nameHeading = document.createElement('h3'); // Crée un h3 pour le nom du produit
+    const nameHeading = document.createElement('h3'); 
     nameHeading.textContent = product.name;
-    textDiv.appendChild(nameHeading); // Ajoute le h3 pour le nom du produit à la div du texte
+    textDiv.appendChild(nameHeading);
 
-    const values = Object.values(product).slice(2); // Exclure les deux premières valeurs (chemin de l'image et nom)
+    const values = Object.values(product).slice(2);
     values.forEach(value => {
         const p = document.createElement('p');
         p.textContent = value;
-        textDiv.appendChild(p); // Ajoute le paragraphe à la div du texte
+        textDiv.appendChild(p);
     });
 
     return divHtml;
